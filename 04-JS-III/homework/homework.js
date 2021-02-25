@@ -129,11 +129,13 @@ function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 19.
   //Escribe tu código aquí
   var cantidadElem =0;
-  var i = 0;
-  do{
-    i=i + 1;
-    cantidadElem++
-  } while(arreglo[i] > 19);
+  
+  for (var i = 0; i < arreglo.length ; i++) {
+    if(arreglo[i] > 19){
+      cantidadElem++
+    }
+  }
+
     return cantidadElem;
 }
 
