@@ -148,7 +148,7 @@ function sumarLikesDeUsuario(usuario) {
   // Tu código:
 
   const likes = usuario['posts'].map(post=> post.likes);
-  var sumaLikes = (accumulator, currentValue) => accumulator + currentValue;
+  let sumaLikes = (accumulator, currentValue) => accumulator + currentValue;
   return likes.reduce(sumaLikes);
 }
 
